@@ -1,0 +1,8 @@
+<!-- use structural directive *ngIf to guard against null or undefined values in a property -->
+<div *ngIf="post" class="preview">
+  <div>
+    <button type="button" class="button" (click)="goToEdit()"><span id="goToEdit">Edit</span></button>
+  </div>
+  <div class="title" [innerHTML]="title"></div>
+  <div class="body" [innerHTML]="body"></div>
+</div>
